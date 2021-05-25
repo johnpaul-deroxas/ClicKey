@@ -1,0 +1,198 @@
+<html>
+    <head>
+        <title>ClicKey Shop - Shop Online</title>
+       <h1 class="tit">ClicKey.</h1>
+        <link rel="stylesheet" type="text/css" href="style.css">
+ 
+    </head>
+    <Body>
+        
+       
+        <div class="dropdown">
+            <button onclick="myFunction()" id="Mycart" class="cart">My Cart</button>
+            <div id="myDropdown" class="dropdown-content">
+               
+            </div>
+          </div>
+
+        <!-- Carousel -->
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="Images\Razer.jpg" style="width:100%">
+      <div class="text">Razer Huntsman Tournament Edition</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="Images\Rakk.jpg" style="width:100%">
+      <div class="text">Rakk Kimat Xt.2</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="Images\Rog.jpg" style="width:100%">
+      <div class="text">Rog Claymore</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+
+ <!-- Products -->
+        <nav class="product-filter">
+
+            <h1 class="keyboardave" >KEYBOARDS AVAILABLE</h1>
+          
+          
+          
+          </nav>
+
+          <section id="click" class="products">
+
+            <!-- It's likely you'll need to link the card somewhere. You could add a button in the info, link the titles, or even wrap the entire card in an <a href="..."> -->
+          
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Images\Rakk Kimat\kimat1.png">
+              </div>
+              <div class="product-info">
+                <h5 id="RakkKimat">Rakk Kimat Xt.2</h5>
+                <h6>₱2,695.00</h6>
+                <button id="btn1" type="button">Add to Cart</button>
+              </div>
+            </div>
+          
+            <div class="product-card">
+                <div class="product-image">
+                  <img src="Images\Rakk Ilis\ilis1.png">
+                </div>
+                <div class="product-info">
+                  <h5>Rakk Ilis</h5>
+                  <h6>₱2,395.00</h6>
+                  <button id="btn2" type="button">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="Images\Rakk Lamang\lamang1.jpg">
+                </div>
+                <div class="product-info">
+                  <h5>Rakk Lam-Ang Pro</h5>
+                  <h6>₱3,495.00</h6>
+                  <button id="btn3" type="button">Add to Cart</button>
+                </div>
+              </div>
+              
+                  <div class="product-card">
+                <div class="product-image">
+                  <img src="Images\Razer Huntsman\Huntsman1.jpg">
+                </div>
+                <div class="product-info">
+                  <h5>Razer Huntsman Tournament Edition</h5>
+                  <h6>₱7,499.00</h6>
+                  <button id="btn4" type="button">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="Images\Razer Blackwidow\Bw1.jpg">
+                </div>
+                <div class="product-info">
+                  <h5>Razer BlackWidow</h5>
+                  <h6>₱7,499.00</h6>
+                  <button id="btn5" type="button">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="Images\Razer Pro Type\Pt1.jpg">
+                </div>
+                <div class="product-info">
+                  <h5>Razer Pro Type</h5>
+                  <h6>₱7,499.00</h6>
+                  <button id="btn6" type="button">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="Images\ROG Claymore\Clay1.png">
+                </div>
+                <div class="product-info">
+                  <h5>ROG CLaymore</h5>
+                  <h6>₱10,299.00</h6>
+                  <button id="btn7" type="button">Add to Cart</button>
+                </div>
+              </div>
+              
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="Images\ROG Strix Scope\strix1.png">
+                </div>
+                <div class="product-info">
+                  <h5>ROG Strix Scope TKL Gundam Edition</h5>
+                  <h6>₱15,800.00</h6>
+                  <button id="btn8" type="button">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="Images\ROG Strix Flare\Flare1.png">
+                </div>
+                <div class="product-info">
+                  <h5>ROG Strix Flare Call of Duty Black Ops 4</h5>
+                  <h6>₱14,999.00</h6>
+                  <button id="btn9" type="button">Add to Cart</button>
+                </div>
+              </div>
+            <!-- more products -->
+          </section>
+     <script src="script.js"></script>
+    </Body>
+
+</html>
